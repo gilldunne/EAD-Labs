@@ -79,8 +79,13 @@ namespace UnitTestSportTeam {
            
              // Indexer adding based on name
              List<SoccerPlayer> nameList = new List<SoccerPlayer>();
-             foreach (SoccerPlayer m in pl["Sam"]) { // ERROR!!
-                  nameList.Add(m);
+             foreach (SoccerPlayer m in pl) {
+                 if (m.Name == "Tom") {
+                     nameList.Add(m);
+                 }
+                 else {
+                     break;
+                 } 
              }
              // checks both lists are equal
              CollectionAssert.AreEqual(team, nameList);

@@ -85,7 +85,7 @@ namespace Exercise4SoccerTeam {
         }
 
         // indexer property
-        public IEnumerable <SoccerPlayer> this[String playerName] {
+        public SoccerPlayer this[String playerName] {
             get {
                 SoccerPlayer player = null;
                 bool isFound = false;
