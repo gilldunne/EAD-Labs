@@ -58,27 +58,27 @@ namespace UnitTestSportTeam {
             st.AddPlayer(sp1);
             st.AddPlayer(sp1);
         }
-        [TestMethod]
-        public void TestIndexer() {
-            SoccerPlayer m1 = new SoccerPlayer("Tom", 12, Gender.Male, Position.Goalkeeper);
-            SoccerPlayer m2 = new SoccerPlayer("Sam", 12, Gender.Male, Position.Defender);
-            SoccerPlayer m3 = new SoccerPlayer("Fergie", 12, Gender.Male, Position.Goalkeeper);
+        /* [TestMethod]
+         public void TestIndexer() {
+             SoccerPlayer m1 = new SoccerPlayer("Tom", 12, Gender.Male, Position.Goalkeeper);
+             SoccerPlayer m2 = new SoccerPlayer("Sam", 12, Gender.Male, Position.Defender);
+             SoccerPlayer m3 = new SoccerPlayer("Fergie", 12, Gender.Male, Position.Goalkeeper);
              
-            SoccerTeam pl = new SoccerTeam("Team 1", Gender.Male, 18);
-            pl.AddPlayer(m1);
-            pl.AddPlayer(m2);
-            pl.AddPlayer(m3); 
+             SoccerTeam pl = new SoccerTeam("Team 1", Gender.Male, 18);
+             pl.AddPlayer(m1);
+             pl.AddPlayer(m2);
+             pl.AddPlayer(m3); 
 
-            List<SoccerPlayer> team = new List<SoccerPlayer>();
-            team.Add(m1);
+             List<SoccerPlayer> team = new List<SoccerPlayer>();
+             team.Add(m1);
            
-            // Indexer adding based on name
-            List<SoccerPlayer> nameList = new List<SoccerPlayer>();
-            foreach (SoccerPlayer m in pl["Tom"]) {
-                 nameList.Add(m);
-            }
-            // checks both lists are equal
-            CollectionAssert.AreEqual(team, nameList);
-        }
+             // Indexer adding based on name
+             List<SoccerPlayer> nameList = new List<SoccerPlayer>();
+             foreach (SoccerPlayer m in pl["Sam"]) { // ERROR!!
+                  nameList.Add(m);
+             }
+             // checks both lists are equal
+             CollectionAssert.AreEqual(team, nameList);
+         }*/
     }
 }

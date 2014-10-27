@@ -77,6 +77,7 @@ namespace Exercise4SoccerTeam {
             this.AgeLimit = ageLimit;
             players = new List<SoccerPlayer>();
         }
+
         public IEnumerator GetEnumerator() {
             foreach (SoccerPlayer s in players) {
                 yield return s;
