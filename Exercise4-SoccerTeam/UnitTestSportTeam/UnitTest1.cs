@@ -1,7 +1,12 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Exercise4SoccerTeam;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using Exercise4SoccerTeam;
+
 namespace UnitTestSportTeam {
     [TestClass]
     public class UnitTest1 {
@@ -58,7 +63,7 @@ namespace UnitTestSportTeam {
             st.AddPlayer(sp1);
             st.AddPlayer(sp1);
         }
-        /* [TestMethod]
+        [TestMethod]
          public void TestIndexer() {
              SoccerPlayer m1 = new SoccerPlayer("Tom", 12, Gender.Male, Position.Goalkeeper);
              SoccerPlayer m2 = new SoccerPlayer("Sam", 12, Gender.Male, Position.Defender);
@@ -79,6 +84,6 @@ namespace UnitTestSportTeam {
              }
              // checks both lists are equal
              CollectionAssert.AreEqual(team, nameList);
-         }*/
+         }
     }
 }
