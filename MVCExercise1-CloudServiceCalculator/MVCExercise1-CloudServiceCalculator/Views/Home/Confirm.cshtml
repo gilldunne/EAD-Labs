@@ -1,0 +1,42 @@
+﻿@model MVCExercise1_CloudServiceCalculator.Models.AzureService
+
+@{
+    ViewBag.Title = "Confirm";
+}
+
+<h2>Confirm</h2>
+
+<div>
+    <h4>AzureService</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumInstances)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumInstances)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InstanceSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InstanceSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
