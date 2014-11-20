@@ -8,7 +8,7 @@ using MVCExercise1_CloudServiceCalculator.Models;
 
 namespace MVCExercise1_CloudServiceCalculator.Controllers {
     public class HomeController : Controller {
-        [HttpGet]
+        [HttpGet]  
         public ActionResult Calculate() {
             ViewBag.InstanceSize = new SelectList(AzureService.SizeDescriptions);
             return View(new AzureService() { NumInstances = 2 });
