@@ -28,5 +28,9 @@ namespace Lab1_Welcome.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Lab1_Welcome.Models.Car> Cars { get; set; }
+
+        public System.Data.Entity.DbSet<Lab1_Welcome.Models.Message> Messages { get; set; }
     }
 }

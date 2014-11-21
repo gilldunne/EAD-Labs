@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCExercise2-StorageCalculator", "MVCExercise2-StorageCalculator\MVCExercise2-StorageCalculator.csproj", "{DB9AF270-36C7-4C8A-A65D-E01FB52342EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB9AF270-36C7-4C8A-A65D-E01FB52342EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB9AF270-36C7-4C8A-A65D-E01FB52342EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB9AF270-36C7-4C8A-A65D-E01FB52342EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB9AF270-36C7-4C8A-A65D-E01FB52342EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
