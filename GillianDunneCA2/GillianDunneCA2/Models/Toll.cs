@@ -23,7 +23,7 @@ namespace GillianDunneCA2.Models {
             }
         }
 
-        [Display(Name = "Electronic Tag")]
+        [Display(Name = "Tick for Electronic Tag")]
         [Required(ErrorMessage = "Is Tag Present?")]
         public bool Tag { get; set; }
 

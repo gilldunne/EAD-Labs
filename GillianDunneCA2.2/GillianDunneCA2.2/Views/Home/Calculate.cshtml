@@ -1,10 +1,10 @@
-﻿@model GillianDunneCA2.Models.Toll
+﻿@model GillianDunneCA2._2.Models.Toll
 
 @{
-    ViewBag.Title = "Calculate Car Toll";
+    ViewBag.Title = "Calculate";
 }
 
-<h2>Calculate Car Toll</h2>
+<h2>Calculate</h2>
 
 
 @using (Html.BeginForm()) 
@@ -15,14 +15,16 @@
         <h4>Toll</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
+        
         <div class="form-group">
             @Html.LabelFor(model => model.CarType, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
+                <div class="checkbox">
                     @Html.EnumDropDownListFor(model => model.CarType, htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
             </div>
         </div>
-
+        
         <div class="form-group">
             @Html.LabelFor(model => model.Tag, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -36,8 +38,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Cost, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                    @Html.DisplayFor(model => model.Cost)
-                    @Html.ValidationMessageFor(model => model.Cost, "", new { @class = "text-danger" })
+                @Html.TextBoxFor(model => model.Cost, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -48,6 +49,10 @@
         </div>
     </div>
 }
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
