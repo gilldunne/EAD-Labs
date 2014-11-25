@@ -1,23 +1,18 @@
 ﻿// Gillian Dunne - X00094469
 
+using GillianDunneCA2.Models;
 using System.Web.Mvc;
 
 namespace GillianDunneCA2.Controllers {
     public class HomeController : Controller {
-        public ActionResult Index() {
-            return View();
+        [HttpGet]
+        public ActionResult Calculate() {
+            return View(new Toll() { CarType = CarType.Car, Tag = false});
         }
 
-        public ActionResult About() {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact() {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+        [HttpPost] 
+        public ActionResult Calculate(Toll toll) {
+            return View(toll);
         }
     }
 }
