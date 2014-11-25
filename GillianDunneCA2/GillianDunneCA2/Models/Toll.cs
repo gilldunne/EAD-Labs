@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace GillianDunneCA2.Models {
-    public enum CarType {
+    public enum VehicleType {
         Car,
         [Display(Name = "Public Service Vehicle")]
         PSV,
@@ -13,14 +13,14 @@ namespace GillianDunneCA2.Models {
     }
     public class Toll {
         // Dictionary to hold the Car and the cost of toll relating to that car
-        protected static Dictionary<CarType, Double> dictionary = new Dictionary<CarType, double>();
+        protected static Dictionary<VehicleType, Double> dictionary = new Dictionary<VehicleType, double>();
         protected static int index = 0;
         protected static double[] charge = { 2.00, 2.00, 2.80, 4.10 };
    
         // Fill the dictionary the first time the code is run only
         // Add the Car Type as the key and the toll charge as the value
         static Toll() {
-            foreach (CarType c in Enum.GetValues(typeof(CarType))) {
+            foreach (VehicleType c in Enum.GetValues(typeof(VehicleType))) {
                 dictionary.Add(c, charge[index]);
                 index++;
             }
@@ -30,18 +30,18 @@ namespace GillianDunneCA2.Models {
         [Required(ErrorMessage = "Is Tag Present?")]
         public bool Tag { get; set; }
 
-        [Display(Name = "Car Type")]
+        [Display(Name = "Vehicle Type")]
         [Required(ErrorMessage = "Car Type Required")]
-        public CarType CarType { get; set; }
+        public VehicleType VehicleType { get; set; }
 
-        // Using the dictionary, get the CarType selected with
+        // Using the dictionary, get the VehicleType selected with
         // the corresponding charge. If the vehicle has a tag
         // then apply a 20% discount
         [DataType(DataType.Currency)]
         public double Cost {
             get {
                 double cost = 0.0;
-                double dir = dictionary[this.CarType];
+                double dir = dictionary[this.VehicleType];
                 
                 if (Tag) { 
                     cost = dir * 0.8;

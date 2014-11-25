@@ -8,7 +8,7 @@ namespace GillianDunneCA2.Controllers {
         // Create a view for calculations, setting defauls to Car and no tag present
         [HttpGet]
         public ActionResult Calculate() {
-            return View(new Toll() { CarType = CarType.Car, Tag = false});
+            return View(new Toll() { VehicleType = VehicleType.Car, Tag = false});
         }
 
         // Display the cost once the calculate button is pressed
