@@ -7,7 +7,7 @@ namespace CAPrep.Models {
         [Display(Name="Very Small")] VSmall, Small,
         Medium, Large, [Display(Name="Very Large")]
         VLarge, A6, A7
-    }
+    } 
     public class CloudService {
         protected static Dictionary<Size, Double> dictionary = new Dictionary<Size, double>();
         protected static int index = 0;

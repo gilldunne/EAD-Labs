@@ -1,0 +1,50 @@
+﻿@model CA3_SampleWork.Models.IndexViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.message</h2>
+
+<div>
+    <h4>IndexViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HasPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HasPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TwoFactor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TwoFactor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrowserRemembered)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrowserRemembered)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

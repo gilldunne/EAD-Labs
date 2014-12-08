@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCExercise1-CloudServiceCalculator", "MVCExercise1-CloudServiceCalculator\MVCExercise1-CloudServiceCalculator.csproj", "{94C65BFD-C4FE-4000-8EF7-C808FB8546A5}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "MVCExercise1-CloudServiceCalculator.Azure1", "MVCExercise1-CloudServiceCalculator.Azure1\MVCExercise1-CloudServiceCalculator.Azure1.ccproj", "{F35DB421-1111-4ADA-83BE-6249D6D53B6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{94C65BFD-C4FE-4000-8EF7-C808FB8546A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94C65BFD-C4FE-4000-8EF7-C808FB8546A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94C65BFD-C4FE-4000-8EF7-C808FB8546A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F35DB421-1111-4ADA-83BE-6249D6D53B6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F35DB421-1111-4ADA-83BE-6249D6D53B6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F35DB421-1111-4ADA-83BE-6249D6D53B6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F35DB421-1111-4ADA-83BE-6249D6D53B6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

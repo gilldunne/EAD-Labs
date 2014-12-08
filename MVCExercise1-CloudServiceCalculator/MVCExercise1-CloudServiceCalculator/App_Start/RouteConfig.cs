@@ -13,7 +13,7 @@ namespace MVCExercise1_CloudServiceCalculator {
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Calculate", id = UrlParameter.Optional }
             );
         }
     }
